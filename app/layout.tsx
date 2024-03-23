@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { ChakraProvider } from '@chakra-ui/react'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body>
         <ChakraProvider>
           <Navbar />
-          {children}
+          <HeroSection />
           <Footer />
           </ChakraProvider>
         </body>
